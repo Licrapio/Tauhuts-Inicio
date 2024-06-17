@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tauhuts</title>
+    <link rel="stylesheet" href="estiloPrin.css">
+    <link rel="stylesheet" href="estilop2.css">
+    <script src="carrito.js" defer></script>
+</head>
+
+<body>
+    <!--Contenedor padre-->
+    <div class="tituloimg">
+        <img src="Visuales/VisualesT/logo.png" alt="logo" class="imagen1">
+        <div class="titulo">
+            <h1>TAUHUTS</h1>
+            <p>Los unicos cuernos que te gustaria probar</p>
+        </div>
+        <img src="Visuales/VisualesT/logo.png" alt="logo" class="imagen2">
+    </div>
+    <!--Aqui termina-->
+
+    <!--Boton a otras paginas-->
+    <div class="radio-inputs">
+        <label class="radio">
+            <input type="radio" name="radio" checked="" />
+            <span class="name"><a href="P1tahuts.html">Inicio</a></span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio" />
+            <span class="name"><a href="P2tahuts.html">Productos</a></span>
+        </label>
+        <label class="radio">
+            <input type="radio" name="radio" />
+            <span class="name"><a href="P3tahuts.html">Contacto y comentarios</a></span>
+        </label>
+    </div>
+    <!--Aqui termina-->
+
+    <!--Tarjeta con informacion-->
+    <div class="contenedor-tarjeta">
+        <!-- 1 -->
+        <div class="tarjeta-diseño">
+            <div class="tarjeta-movimiento">
+                <div class="tarjeta-dfrontal">
+                    <img src="Visuales/VisualesT/Toreo.jfif" alt="Imagen" class="tarjeta-imagen">
+                    <p class="tarjeta-titulo">TOREO</p>
+                    <p>Precio $85</p>
+                </div>
+                <div class="tarjeta-dposterior">
+                    <p>
+                    <h6>Este delicioso brebaje se presenta en un envase de plástico de alta calidad, garantizando su
+                        durabilidad y seguridad.
+                        Elaborado a base de leche, nuestro producto ofrece una experiencia cremosa y
+                        reconfortante.<br><br>
+                        Con un irresistible sabor a galleta de chocolate, cada sorbo es una invitación a disfrutar de
+                        una combinación única de dulzura
+                        y suavidad, ideal para satisfacer esos antojos irresistibles. Perfecto como regalo o detalle, su
+                        presentación y sabor lo
+                        convierten en una elección elegante y memorable.</h6>
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta-acciones">
+                <button class="comparar-btn" onclick="agregarProducto('toreo', 'TOREO', 85)">Agregar</button>
+                <select class="cantidad-select" id="toreo-cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="tarjeta-diseño">
+            <div class="tarjeta-movimiento">
+                <div class="tarjeta-dfrontal">
+                    <img src="Visuales/VisualesT/Teresa.jfif" alt="Imagen" class="tarjeta-imagen">
+                    <p class="tarjeta-titulo">TERESA</p>
+                    <p>Precio $115</p>
+
+                </div>
+                <div class="tarjeta-dposterior">
+                    <p>
+                    <h6>Este delicioso brebaje se presenta en un envase de plástico de alta calidad, garantizando su
+                        durabilidad y
+                        seguridad. Elaborado a base de leche, nuestro producto ofrece una experiencia cremosa y
+                        reconfortante, enriquecida
+                        con un contenido de alcohol del 2%, que aporta una nota distintiva y sofisticada.<br><br>
+                        Con un delicioso sabor a fresa, cada sorbo es una invitación a disfrutar de una combinación
+                        única de dulzura y
+                        suavidad, ideal para satisfacer esos antojos irresistibles. Perfecto como regalo o detalle, su
+                        presentación y sabor
+                        lo convierten en una elección elegante y memorable.</h6>
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta-acciones">
+                <button class="comparar-btn" onclick="agregarProducto('teresa', 'TERESA', 115)">Agregar</button>
+                <select class="cantidad-select" id="teresa-cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="tarjeta-diseño">
+            <div class="tarjeta-movimiento">
+                <div class="tarjeta-dfrontal">
+                    <img src="Visuales/VisualesT/Mazapan.jfif" alt="Imagen" class="tarjeta-imagen">
+                    <p class="tarjeta-titulo">MAZAPAN</p>
+                    <p>Precio $115</p>
+                </div>
+                <div class="tarjeta-dposterior">
+                    <p>
+                    <h6>Este delicioso brebaje se presenta en un envase de plástico de alta calidad, garantizando su
+                        durabilidad y
+                        seguridad. Elaborado a base de leche, nuestro producto ofrece una experiencia cremosa y
+                        reconfortante, enriquecida
+                        con un contenido de alcohol del 2%, que aporta una nota distintiva y sofisticada.<br><br>
+                        Con un delicioso sabor a mazapán, cada sorbo es una invitación a disfrutar de una combinación
+                        única de dulzura y
+                        suavidad, ideal para satisfacer esos antojos irresistibles. Perfecto como regalo o detalle, su
+                        presentación y sabor
+                        lo convierten en una elección elegante y memorable.</h6>
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta-acciones">
+                <button class="comparar-btn" onclick="agregarProducto('mazapan', 'MAZAPAN', 115)">Agregar</button>
+                <select class="cantidad-select" id="mazapan-cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="tarjeta-diseño">
+            <div class="tarjeta-movimiento">
+                <div class="tarjeta-dfrontal">
+                    <img src="Visuales/VisualesT/Tamal.jfif" alt="Imagen" class="tarjeta-imagen">
+                    <p class="tarjeta-titulo">TAMAL</p>
+                    <p>Precio $18</p>
+                </div>
+                <div class="tarjeta-dposterior">
+                    <p>
+                    <h6>Presentamos nuestro tamal gourmet, una delicia auténtica de la gastronomía mexicana. Elaborado
+                        con una masa suave y esponjosa a
+                        base de harina de maíz, este tamal se distingue por su inigualable sabor a mazapán, que ofrece
+                        una experiencia dulce y reconfortante
+                        en cada bocado.<br><br>
+                        Enriquecido con un toque envinado, nuestro tamal añade una nota sofisticada y aromática,
+                        elevando su perfil de sabor a nuevos niveles.
+                        Esta combinación única no solo satisface el hambre, sino que también deleita el paladar con su
+                        complejidad y riqueza.</h6>
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta-acciones">
+                <button class="comparar-btn" onclick="agregarProducto('tamal', 'TAMAL', 18)">Agregar</button>
+                <select class="cantidad-select" id="tamal-cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <!-- 5 -->
+        <div class="tarjeta-diseño">
+            <div class="tarjeta-movimiento">
+                <div class="tarjeta-dfrontal">
+                    <img src="Visuales/VisualesT/Llaveros.jfif" alt="Imagen" class="tarjeta-imagen">
+                    <p class="tarjeta-titulo">LLAVEROS</p>
+                    <p>Precio $45</p>
+                </div>
+                <div class="tarjeta-dposterior">
+                    <p>
+                    <h6>Esta obra está hecha de estambre de alta calidad, lo que le confiere una suavidad incomparable
+                        al tacto y una durabilidad
+                        excepcional.<br><br>
+                        De tamaño moderado, esta pieza es perfecta para decorar diversos espacios, añadiendo un toque de
+                        calidez y elegancia a cualquier
+                        ambiente. Su confección en estambre no solo garantiza una textura acogedora, sino también una
+                        resistencia que asegura su
+                        preservación a lo largo del tiempo.</h6>
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta-acciones">
+                <button class="comparar-btn" onclick="agregarProducto('llaveros', 'LLAVEROS', 45)">Agregar</button>
+                <select class="cantidad-select" id="llaveros-cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="tarjeta-diseño">
+            <div class="tarjeta-movimiento">
+                <div class="tarjeta-dfrontal">
+                    <img src="Visuales/VisualesT/Becerritos.jfif" alt="Imagen" class="tarjeta-imagen">
+                    <p class="tarjeta-titulo">BECERRITOS</p>
+                    <p>Precio $20</p>
+                </div>
+                <div class="tarjeta-dposterior">
+                    <p>
+                    <h6>Este producto artesanal está hecho cuidadosamente de cajeta y galleta, combinando texturas
+                        suaves y crujientes
+                        para una experiencia única.<br><br>
+                        Nuestro dulce cuenta con un toque envinado que aporta una nota sofisticada y distintiva, ideal
+                        para aquellos que
+                        buscan un snack refinado. Además, es un producto accesible, pensado para disfrutar en cualquier
+                        momento
+                        del día.</h6>
+                    </p>
+                </div>
+            </div>
+            <div class="tarjeta-acciones">
+                <button class="comparar-btn" onclick="agregarProducto('becerritos', 'BECERRITOS', 20)">Agregar</button>
+                <select class="cantidad-select" id="becerritos-cantidad">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!--Aqui termina-->
+
+    <!--Carrito, mas bien tabla pero aja-->
+    <div class="carrito-container">
+        <h2>Productos Seleccionados</h2>
+        <table id="lista-productos">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio Unitario</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se añadirán los productos asi bien cool-->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
+                    <td id="total">0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="5" style="text-align: right;">
+                        <button id="realizar-compra-btn" class="comprar-btn">Realizar compra</button>
+                        <button class="eliminar-btn" onclick="eliminarTodo()">Eliminar Todo</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <!--fin-->
+    
+</body>
+
+</html>

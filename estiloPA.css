@@ -1,0 +1,66 @@
+/* Estilos generales del formulario */
+#formulario-compra {
+  margin-top: 5009em; /* Espacio superior */
+  max-width: 800px; /* Ancho máximo ajustado según tu diseño */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 30px; /* Espacio interno */
+  background-color: #eccca8; /* Color de fondo */
+  border: 1px solid #ccc; /* Borde del formulario */
+  border-radius: 8px; /* Bordes redondeados */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Espacio inferior entre grupos */
+}
+
+label {
+  color: rgb(116, 64, 16); /* Color del texto de etiqueta */
+  display: block; /* Mostrar etiquetas como bloques */
+  margin-bottom: 8px; /* Espacio inferior entre etiqueta y campo */
+  font-weight: bold; /* Texto en negrita */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="submit"] {
+  width: calc(100% - 20px); /* Ancho del campo (menos 20px para el borde) */
+  padding: 12px; /* Relleno interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde del campo */
+  border-radius: 4px; /* Bordes redondeados */
+  box-sizing: border-box; /* Incluir el relleno y el borde en el tamaño total */
+  margin-bottom: 10px; /* Espacio inferior entre campos */
+}
+
+textarea {
+  resize: vertical; /* Permitir redimensionamiento vertical */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 15px 20px; /* Relleno del botón */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cursor apuntador */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición del color de fondo */
+  width: 100%; /* Ancho completo */
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049; /* Color de fondo al pasar el mouse */
+}
+
+h2 {
+  color: navy; /* Color del título */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+h3 {
+  color: navy; /* Color del subtítulo */
+  margin-top: 30px; /* Espacio superior */
+}

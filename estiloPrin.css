@@ -1,0 +1,147 @@
+/*ESTILO DE TODAS LAS PAGINAS*/
+/*Primer contenedor*/
+body { 
+    color: #dbb259; /*texto del contenedor padre*/
+    font-family:'Franklin Gothic Medium' sans-serif; 
+    display: flex; 
+    flex-direction: column; /* Cambiado a columna para que los hijos se apilen verticalmente */ 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+    padding-top: 20px; /* Espacio superior opcional */ 
+    background-color: #dbb259; /* Fondo del cuerpo de la página */ 
+} 
+
+.tituloimg { 
+    background-color: #6d431b; /*color del contenedor del titulo*/
+    display: flex; 
+    align-items: center; /* Centramos verticalmente los elementos */ 
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */ 
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor según sea necesario */ 
+    border: 1px solid #613a16; /* Opcional: para visualizar el contenedor */ 
+    padding: 20px; 
+    box-shadow: 0 0 10px #5f3a09a9; /* Opcional: para darle un poco de estilo */ 
+}
+ 
+.imagen1 { 
+  background-image: url('Visuales/VisualesT/logo.png');
+    background-size: cover;
+    margin-right: 20px; 
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */ 
+    height: auto; /* Mantiene la proporción de la imagen */ 
+} 
+
+.imagen2 { 
+    margin-left: 20px; 
+    width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */ 
+    height: auto; /* Mantiene la proporción de la imagen */ 
+} 
+
+.titulo { 
+    flex: 1; /* Permite que el contenedor del título ocupe el espacio restante */ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Centra el título horizontalmente */ 
+    align-items: center; /* Centra el título verticalmente */ 
+    text-align: center; /* Asegura que el texto esté centrado */ 
+} 
+
+.titulo h1 { 
+    margin: 0; /* Remueve el margen por defecto del título */ 
+    font-size: 70px; /* Ajusta el tamaño del texto del título */ 
+    font-weight: bold; /* Opcional: hace que el texto sea más grueso */ 
+} 
+
+.titulo p { 
+    font-family:'Franklin Gothic Medium' sans-serif; 
+    margin: 0; /* Remueve el margen por defecto del título */ 
+    font-size: 20px; /* Ajusta el tamaño del texto del título */ 
+    font-weight: bold; /* Opcional: hace que el texto sea más grueso */ 
+} 
+/*fin*/
+
+/*boton de despazamiento a otra pag*/
+.radio-inputs {
+    position: relative;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #6d431b;
+    box-sizing: border-box;
+    font-size: 30px;
+    width: 90%;
+    padding: 1rem 1rem 0 1rem;
+    margin-top: 20px;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    color: #ffffff;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+}
+
+.radio-inputs .radio .name a {
+    color: #e7d3b9; /* Color claro para el texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.radio-inputs .radio input:checked + .name {
+    background-color: #dbb259;/*coso visual que desplaza*/
+    font-weight: 600;
+    color: #6d431b; /* Color oscuro para el texto cuando está seleccionado */
+}
+
+.radio-inputs .radio input:checked + .name a {
+    color: #6d431b; /* Color oscuro para el enlace cuando está seleccionado */
+}
+
+.radio-inputs .radio .name:hover {
+    color: #dac1a1;
+}
+
+.radio-inputs .radio input + .name:hover a {
+    color: #dac1a1; /* Color claro para el enlace al pasar el cursor */
+}
+
+.radio-inputs .radio input:checked + .name:hover {
+    color: #dac1a1;
+}
+
+.radio-inputs .radio input:checked + .name:hover a {
+    color: #dac1a1; /* Color claro para el enlace al pasar el cursor estando seleccionado */
+}
+
+.radio-inputs .radio input:checked + .name::after,
+.radio-inputs .radio input:checked + .name::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #6d431b;
+    bottom: 0;
+}
+
+.radio-inputs .radio input:checked + .name::after {
+    right: -10px;
+    border-bottom-left-radius: 300px;
+    box-shadow: -3px 3px 0px 3px #dbb259;/*coso visual que desplaza*/
+}
+
+.radio-inputs .radio input:checked + .name::before {
+    left: -10px;
+    border-bottom-right-radius: 300px;
+    box-shadow: 3px 3px 0px 3px #dbb259;/*coso visual que desplaza*/
+}
+/*fin*/
+

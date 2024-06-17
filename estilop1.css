@@ -1,0 +1,84 @@
+/*ESTILO DE LA PAG 1*/
+/*pag1 info*/
+.informacion { 
+    display: flex; 
+    align-items: center; /* Centra verticalmente los elementos */ 
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */ 
+    width: 100%; 
+    font-size: 21px; /* Ajusta el tamaño del texto del título */ 
+    max-width: 1200px; /* Ajusta el ancho máximo de la sección de información */ 
+    background-color: #6d431b; /* Color de fondo de la sección de información */ 
+    color:#dac1a1; /* Color del texto de la sección de información */ 
+    padding: 20px; 
+    box-shadow: 0 0 10px #633d0b; /* Opcional: para darle un poco de estilo */ 
+    margin-top: 20px; /* Espacio entre el contenedor principal y la sección de información */ 
+  } 
+  /*fin*/
+  
+  /* Contenedor del video e información adicional */
+  .video-contenedor {
+    position: relative; /* Para que los elementos hijos puedan usar posicionamiento absoluto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .video-informacion {
+    font-size: 34px;
+    position: absolute; /* Para colocar la información sobre el video */
+    top: -40px; /* Ajusta la posición de la información sobre el video */
+    color: #dac1a1; /* Color del texto */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  video {
+    margin-top: 50px; /* Espacio entre la información adicional y el video */
+  }
+  /*Aqui termina*/
+  
+  /* Sección de imágenes */
+  .imagenes {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px; /* Espacio entre el video y las imágenes */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo del contenedor de imágenes según sea necesario */
+    background-color: #6d431b; /* Color de fondo del contenedor de imágenes */
+    box-shadow: 0 0 10px #5f3a09a9; /* Opcional: para darle un poco de estilo */
+  }
+  
+  .imagen-contenedor {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra las imágenes y el texto horizontalmente */
+  }
+  
+  .imagen {
+    width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    border: 1px solid #6d431b; /* Opcional: para visualizar el contenedor de las imágenes */
+    box-shadow: 0 0 10px #5f3a09a9; /* Opcional: para darle un poco de estilo */
+  }
+  
+  .imagen-texto {
+    font-size: 5px; 
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    color: #dac1a1; /* Color del texto debajo de las imágenes */
+    text-align: center; /* Centra el texto debajo de las imágenes */
+  }
+  /* aqui termina*/
+  
+  /*Aqui empieza la etiqueta que dice mas productos*/
+  .pro-informacion {
+    position: absolute; /* Para colocar la información sobre el video */
+    top: 828px; /* Ajusta la posición de la información sobre el video */
+    color: #dac1a1; /* Color del texto */
+    padding: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  /*Aqui termina*/

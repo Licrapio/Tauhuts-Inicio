@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tauhuts</title>
+    <link rel="stylesheet" href="estiloPrin.css">
+    <link rel="stylesheet" href="estiloIS.css">
+</head>
+<body>
+    <!-- Contenedor padre -->
+    <div class="tituloimg">
+        <img src="Visuales/VisualesT/logo.png" alt="logo" class="imagen1">
+        <div class="titulo">
+            <h1>TAUHUTS</h1>
+            <p>Los únicos cuernos que te gustaría probar</p>
+        </div>
+        <img src="Visuales/VisualesT/logo.png" alt="logo" class="imagen2">
+    </div>
+
+    <!-- Formulario de sesión -->
+    <div class="wrapper">
+        <div class="card-switch">
+            <label class="switch">
+                <input type="checkbox" class="toggle">
+                <span class="slider"></span>
+                <span class="card-side"></span>
+                <div class="flip-card__inner">
+                    <div class="flip-card__front">
+                        <div class="title">Iniciar sesión</div>
+                        <form id="loginForm" class="flip-card__form" onsubmit="return login()">
+                            <input class="flip-card__input" name="loginEmail" id="loginEmail" placeholder="Email" type="email" required>
+                            <input class="flip-card__input" name="loginPassword" id="loginPassword" placeholder="Password" type="password" required>
+                            <button type="submit" class="flip-card__btn">Iniciar sesión</button>
+                        </form>
+                    </div>
+                    <div class="flip-card__back">
+                        <div class="title">Registrarse</div>
+                        <form id="registerForm" class="flip-card__form" onsubmit="return register()">
+                            <input class="flip-card__input" name="registerName" id="registerName" placeholder="Name" type="text" required>
+                            <input class="flip-card__input" name="registerEmail" id="registerEmail" placeholder="Email" type="email" required>
+                            <input class="flip-card__input" name="registerPassword" id="registerPassword" placeholder="Password" type="password" required>
+                            <button type="submit" class="flip-card__btn">Registrarse</button>
+                        </form>
+                    </div>
+                </div>
+            </label>
+        </div>
+    </div>
+    
+    <script src="inicio_Reg.js"> </script>
+
+</body>
+</html>

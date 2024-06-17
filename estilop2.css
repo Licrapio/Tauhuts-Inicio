@@ -1,0 +1,222 @@
+/*ESTILO DE PAG 2*/
+.compraL {
+    position: absolute;
+    top: 4cm; /* Ajusta la distancia desde la parte superior */
+    right: 1cm; /* Ajusta la distancia desde la derecha */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    }
+    /*mantiene la imagen a la derecha*/
+   .imagen-derecha {
+    padding-top: 25px;
+    margin-left: 65rem; /* Espacio entre los radios y la imagen */
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    }
+    /*fin*/
+
+  /*tarjetas*/
+  .contenedor-tarjeta {
+    margin-top: 100px; /* Ajusta según sea necesario para evitar que las tarjetas se superpongan con la imagen de compra */
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);/*Define las columnas de igual tamaño */
+      grid-template-rows: repeat(3, auto);
+      gap: 80px; /* Espacio entre tarjetas */
+      margin-top: 3cm; /* Ajusta la distancia desde el contenedor principal */
+  }
+  
+  .tarjeta-diseño {
+      background-color: transparent;
+      width: 250px;
+      height: 360px;
+      perspective: 1000px;/*forma 3D sensacion de giro*/
+      font-family:Cambria, Cochin, Georgia, Times, ;
+  }
+  
+  .tarjeta-titulo {
+      font-size: 1.8em;
+      font-weight: 900;
+      text-align: center;
+      margin: 0;
+  }
+  
+  .tarjeta-movimiento {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+  }
+  
+  .tarjeta-diseño:hover .tarjeta-movimiento {/*rota la tajeta*/
+      transform: rotateY(180deg);
+  }
+  
+  .tarjeta-dfrontal, .tarjeta-dposterior {
+      box-shadow: 0 8px 14px 0 rgba(138, 98, 23, 0.2);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;/*oculpa su visibilidad de enfrete o atras*/
+      backface-visibility: hidden;
+      border: 1px solid rgba(139, 65, 4, 0.849);
+      border-radius: 1rem;
+  }
+  
+  .tarjeta-dfrontal {/*degradado de enfrente con imagen*/
+      background: linear-gradient(120deg, rgba(202, 156, 55, 0.712) 60%, rgba(161, 109, 13, 0.712) 88%,
+       rgb(216, 0, 0) 40%, rgba(133, 95, 14, 0.712) 48%);
+      color: rgb(0, 0, 0);
+  }
+  
+  .tarjeta-dposterior {/*degradado de atras con texto*/
+      background:linear-gradient(120deg, rgba(202, 156, 55, 0.712) 60%, rgba(161, 109, 13, 0.712) 88%,
+      rgb(216, 0, 0) 40%, rgba(133, 95, 14, 0.712) 48%); 
+      color: rgb(0, 0, 0);
+      transform: rotateY(180deg);
+  }
+  
+  .tarjeta-imagen {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-bottom: 1px solid #ccc;
+  }
+  
+  .tarjeta {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px #88572ad3;
+  }
+  .tarjeta-dposterior p, .tarjeta-dposterior h6 {
+      font-size: .8em; /* Ajusta el tamaño del texto según tu preferencia */
+  }
+  /*Termina aqui*/
+  
+  /*Boton de la tarjeta*/
+  .tarjeta-acciones {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-top: 10px;
+  }
+  
+  .comparar-btn {
+      background-color: #c77d38;
+      color: white;
+      border-radius: 5px;;
+      padding: 5px 10px;
+      cursor: pointer;
+  }
+  
+  .comparar-btn:hover {
+      background-color: #c77d38;
+  }
+  
+  .cantidad-select {
+      padding: 5px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+  }
+  /*Aqui termina*/
+
+  /*contenedor carrito*/
+  .carrito-container {
+    margin-top: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #5f3d0a;
+    border-radius: 8px;
+    background-color: #ebce9afb;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1.2px solid #1b0306;
+}
+
+table th {
+    background-color: #e9c9a065;
+    color: #080f0fde;
+}
+
+table td {
+    background-color: #df7d2260;
+}
+
+table tfoot {
+    font-weight: bold;
+}
+
+.cantidad-container {
+    display: flex;
+    align-items: center;
+}
+
+.cantidad-select {
+    margin-right: 5px;
+    width: 50px;
+    text-align: center;
+}
+
+.cantidad-btn {
+    background-color: #61a03ce1;
+    color: rgb(10, 0, 0);
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cantidad-btn:hover {
+    background-color: #61a03ce1;
+}
+
+h2{
+    color: rgb(39, 24, 3);
+}
+
+tbody{
+    color: #1b0306;
+}
+
+td{
+    color: #5f3d0a;
+}
+
+.comprar-btn, .eliminar-btn {
+    background-color: #996534;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.comprar-btn:hover, .eliminar-btn:hover {
+    background-color: #d48b2c;
+}
